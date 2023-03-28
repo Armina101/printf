@@ -1,16 +1,14 @@
-# _printf - Custom
-# Implementation of
-# printf function
+# _printf - Custom Implementation of printf function
 
 _printf is a custom implementation of the printf function in C programming language. It
 supports a subset of the standard printf format specifiers, as well as some custom
 specifiers. This implementation is designed to handle a variety of input formats and
 provide output according to a format.
 
-# Usage
+## Usage
 
 To use the _printf function, first include the header file main.h in your C program:
-#include "main.h"
+ include "main.h"
 
 Then, call the function with the desired format specifier and arguments:
 int num = 42;
@@ -19,7 +17,7 @@ _printf("The answer is %d and the message is %s\n", num, str);
 The above code will output:
 The answer is 42 and the message is hello, world
 
-# Supported Format Specifiers
+## Supported Format Specifiers
 
 _printf supports the following standard format specifiers:
 ● %c - prints a character
@@ -37,7 +35,7 @@ In addition to the standard specifiers, _printf supports the following custom sp
 ● %S - prints a string, escaping non-printable characters with their ASCII code value
 in hexadecimal
 
-# Flags, Field Width, and Precision
+### Flags, Field Width, and Precision
 
 _printf supports several flags for formatting output, including:
 ● - to left-justify the output
@@ -48,14 +46,14 @@ _printf supports several flags for formatting output, including:
 It also supports specifying a field width and precision for output, as in the standard
 printf function.
 
-# Implementation Details
+### Implementation Details
 
 _printf uses a local buffer of 1024 characters to minimize calls to the write function. It
 handles format specifiers, flags, field width, and precision using a combination of string
 manipulation and conditional logic. It also performs argument type checking and
 formatting based on the specified format specifier.
 
-# Authors
+###  Authors
 
-This _printf was developed by Amina Afolabi and Aishat Adeladun Adewoyin as 
+This _printf was developed by Amina Afolabi and Aishat Adeladun Adewoyin as
 a project for ALX's Sofware Engineering course (Cohort 12).
