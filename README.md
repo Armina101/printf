@@ -35,7 +35,8 @@ _printf supports the following standard format specifiers:
 ● %p - prints a pointer address in hexadecimal 
 ● %% - prints a literal % character
 
-In addition to the standard specifiers, _printf supports the following custom specifiers: 
+In addition to the standard specifiers, _printf suppors the following custom specifiers: 
+
 ● %b - prints an unsigned integer in binary 
 ● %S - prints a string, escaping non-printable characters with their ASCII code value
 in hexadecimal
