@@ -7,42 +7,47 @@ provide output according to a format.
 
 ## Usage
 
+<<<<<<< HEAD
 To use the _printf function, first include the header file main.h in your C program:
  include "main.h"
+=======
+To use the _printf function, first include the header file main.h in your C program: 
+#include "main.h"
+>>>>>>> 1f8d7d555e2d34587a96dee4227efcd49f446965
 
-Then, call the function with the desired format specifier and arguments:
-int num = 42;
-char str[] = "hello, world";
-_printf("The answer is %d and the message is %s\n", num, str);
-The above code will output:
+Then, call the function with the desired format specifier and arguments: 
+int num = 42; 
+char str[] = "hello, world"; 
+_printf("The answer is %d and the message is %s\n", num, str); 
+The above code will output: 
 The answer is 42 and the message is hello, world
 
 ## Supported Format Specifiers
 
-_printf supports the following standard format specifiers:
-● %c - prints a character
-● %s - prints a null-terminated string
-● %d or %i - prints a signed integer
-● %u - prints an unsigned integer
-● %o - prints an octal integer
-● %x - prints a hexadecimal integer in lowercase letters
-● %X - prints a hexadecimal integer in uppercase letters
-● %p - prints a pointer address in hexadecimal
+_printf supports the following standard format specifiers: 
+● %c - prints a character 
+● %s - prints a null-terminated string 
+● %d or %i - prints a signed integer 
+● %u - prints an unsigned integer 
+● %o - prints an octal integer 
+● %x - prints a hexadecimal integer in lowercase letters 
+● %X - prints a hexadecimal integer in uppercase letters 
+● %p - prints a pointer address in hexadecimal 
 ● %% - prints a literal % character
 
-In addition to the standard specifiers, _printf supports the following custom specifiers:
-● %b - prints an unsigned integer in binary
+In addition to the standard specifiers, _printf supports the following custom specifiers: 
+● %b - prints an unsigned integer in binary 
 ● %S - prints a string, escaping non-printable characters with their ASCII code value
 in hexadecimal
 
 ### Flags, Field Width, and Precision
 
-_printf supports several flags for formatting output, including:
-● - to left-justify the output
-● + to always show a sign (+ or -) for signed numbers
-● 0 to pad the output with zeroes instead of spaces
-● (space) to insert a space before a positive number (ignored when + is present)
-● # to prefix non-zero hexadecimal and octal values with 0x and 0, respectively
+_printf supports several flags for formatting output, including: 
+● - to left-justify the output 
+● + to always show a sign (+ or -) for signed numbers 
+● 0 to pad the output with zeroes instead of spaces 
+● (space) to insert a space before a positive number (ignored when + is present) 
+● # to prefix non-zero hexadecimal and octal values with 0x and 0, respectively 
 It also supports specifying a field width and precision for output, as in the standard
 printf function.
 
